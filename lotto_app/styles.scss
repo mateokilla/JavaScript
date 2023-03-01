@@ -35,8 +35,34 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  img{
+    max-width: 200px;
+  }
 }
 
 main {
   height: 63.6vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  .welcome-message{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border: 1px solid crimson;
+    border-radius: 15px;
+    box-shadow: 0 1px 5px crimson;
+    width: 400px;
+    h1{
+      padding: 1rem;
+      text-align: center;
+    }
+    h2{
+      padding: 0 1rem 1rem 1rem;
+      text-align: center;
+    }
+  }
 }
