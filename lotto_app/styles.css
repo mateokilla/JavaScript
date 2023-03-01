@@ -38,15 +38,16 @@ footer {
   align-items: center;
 }
 footer img {
-  max-width: 200px;
+  max-width: 150px;
 }
 
 main {
-  height: 63.6vh;
+  height: 80%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  margin-top: 1rem;
 }
 main .welcome-message {
   display: flex;
@@ -54,10 +55,10 @@ main .welcome-message {
   justify-content: center;
   align-items: center;
   padding: 1rem;
-  border: 1px solid crimson;
+  border: 2px solid crimson;
   border-radius: 15px;
-  box-shadow: 0 1px 5px crimson;
-  width: 400px;
+  box-shadow: 0 1px 5px rgba(220, 20, 60, 0.2);
+  width: 300px;
 }
 main .welcome-message h1 {
   padding: 1rem;
@@ -66,4 +67,59 @@ main .welcome-message h1 {
 main .welcome-message h2 {
   padding: 0 1rem 1rem 1rem;
   text-align: center;
+}
+main .number-input {
+  background-color: antiquewhite;
+  padding: 1rem;
+  border-radius: 15px;
+}
+main .number-input button {
+  background-color: crimson;
+  border: none;
+  color: whitesmoke;
+  padding: 0.5rem;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+main .number-input button:hover,
+main .number-input button :after {
+  color: crimson;
+  background-color: whitesmoke;
+}
+main .number-input input {
+  background-color: crimson;
+  color: whitesmoke;
+  padding: 0.5rem;
+  border: none;
+  outline: invert;
+  font-weight: bold;
+  border-radius: 10px;
+}
+main .number-input p {
+  text-align: center;
+  padding: 0.5rem;
+}
+main .game {
+  background-color: antiquewhite;
+  padding: 1rem;
+  border-radius: 15px;
+}
+main .game p {
+  text-align: center;
+  padding: 0.5rem;
+}
+main .game button {
+  background-color: crimson;
+  border: none;
+  color: whitesmoke;
+  padding: 0.5rem;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+main .game button:hover,
+main .game button :after {
+  color: crimson;
+  background-color: whitesmoke;
 }/*# sourceMappingURL=styles.css.map */

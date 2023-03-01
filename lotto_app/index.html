@@ -3,7 +3,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="lotto.png">
+    <link rel="icon" href="lotto.png" />
     <title>Lotto</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -23,21 +23,23 @@
       </div>
       <form class="number-input">
         <input type="number" min="1" max="70" />
-        <button type="submit">Add the number!</button>
+        <button type="submit" id="add-btn">Add the number!</button>
         <div>
           <p>Your numbers are:</p>
+          <p id="user-numbers">1, 2, 3, 4, 5</p>
         </div>
       </form>
 
-     <div class="game">
-        <button type="button">Let's start the game!</button>
+      <div class="game">
+        <button type="submit" id="play-btn">Let's start the game!</button>
         <p>The winner numbers are:</p>
-        <p>You: </p>
-     </div>
+        <p id="machine-number">1, 2, 3, 4, 5</p>
+        <p>You have 5 matches!</p>
+      </div>
     </main>
 
     <footer>
-      <h1><img src="lotto.png" alt="lotto game"></h1>
+      <h1><img src="lotto.png" alt="lotto game" /></h1>
     </footer>
     <script src="app"></script>
   </body>
