@@ -13,4 +13,17 @@ for (let i = 1; i <= 10; i++) {
 }
 document.write("</table>");
 
+document.write("<hr>");
+
 //szorzo tabla 1-20-ig
+document.write("<table border=1>");
+for (let i = 1; i <= 20; i++) {
+  document.write("<tr>");
+
+  for (let j = 1; j <= 20; j++) {
+    document.write(`<td>${[i] * [j]}</td>`);
+  }
+
+  document.write("</tr>");
+}
+document.write("</table>");
