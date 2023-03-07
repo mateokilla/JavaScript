@@ -27,3 +27,14 @@ for (let i = 1; i <= 20; i++) {
   document.write("</tr>");
 }
 document.write("</table>");
+
+document.write("<hr>");
+
+//2 hatvanyai talba
+document.write("<table border=1>");
+document.write('<th>hatvany</th><th>ertek</th>')
+for (let i = 0; i <= 30; i++){
+    document.write(`<tr><td>2<sup>${[i]}</sup></td><td>${Math.pow(2, [i])}</td></tr>`)
+}
+
+document.write("</table>");
