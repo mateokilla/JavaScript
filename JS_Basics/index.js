@@ -123,3 +123,39 @@ function maximumErtek(tomb) {
 }
 document.write("<br>");
 document.write("A mintaTomb legynagyobb eleme: " + maximumErtek(mintaTomb));
+
+document.write("<hr>");
+
+//primszam eldonto
+function tombGenerator() {
+  let szamokTombje = [];
+
+  for (let i = 1; i < 100; i++) {
+    szamokTombje.push([i]);
+  }
+
+  return szamokTombje;
+}
+
+let vizsgalandoTomb = tombGenerator();
+
+function primSzamVizsgalo(tomb) {
+  let primSzamokTombje = [];
+
+  for (i = 0; i < tomb.length; i++) {
+    let osztokSzama = 0;
+    for (let j = 0; j < tomb.length; j++) {
+      if (tomb[i] % j == 0) {
+        osztokSzama++;
+      }
+    }
+    if (osztokSzama == 2) {
+      primSzamokTombje.push(tomb[i]);
+    }
+  }
+  return primSzamokTombje;
+}
+document.write(primSzamVizsgalo(vizsgalandoTomb));
+
+
+document.write("<hr>");
