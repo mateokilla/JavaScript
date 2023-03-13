@@ -68,3 +68,15 @@ function changeImageSizeManyTimes() {
     image.className = "small";
   }
 }
+
+
+let tablazat = document.querySelector("#tablazatocska");
+
+for (i=0;i<10;i++){
+  tablazat+= '<tr>'
+  for(let j = 0;j<10;j++){
+    tablazat+='<td>' + j + '</td>'
+  }
+  tablazat+='</tr>'
+}
+

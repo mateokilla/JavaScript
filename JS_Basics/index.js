@@ -159,3 +159,13 @@ document.write(primSzamVizsgalo(vizsgalandoTomb));
 
 
 document.write("<hr>");
+
+//arrow function
+let tombGeneratorArrow = () => {
+  let szamokTombje = [];
+
+  for (let i = 1; i < 100; i++) {
+    szamokTombje.push([i]);
+  }
+}
+document.write(tombGeneratorArrow())

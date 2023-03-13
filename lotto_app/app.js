@@ -6,3 +6,13 @@ let userNumbers = [];
 let machineNumbers = [];
 let isEnough = false;
 
+addBtn.addEventListener("click", function addNumber(e) {
+  e.preventDefault();
+  console.log("clicked");
+  inputNumber = document.getElementById("input-number").value;
+  if (userNumbers.length < 5) {
+    userNumbers.push(inputNumber);
+    userNumberList.innerHTML = userNumbers;
+    console.log(userNumbers)
+  }
+});
